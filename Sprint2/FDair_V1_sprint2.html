@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlyDreamAir Loyalty Program - Dashboard</title>
-    <link rel="stylesheet" href="style_v1.css">
+    <link rel="stylesheet" href="style_v2.css">
 </head>
 <body>
     <header>
-        <h1>FlyDreamAir SkyRewards</h1>
+        <div class="container">
+            <h1>FlyDreamAir SkyRewards</h1>
+        </div>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Earn Points</a>
-        <a href="#">Use Points</a>
-        <a href="#">My Account</a>
-        <a href="#">Login</a>
+        <div class="container">
+            <a href="#">Home</a>
+            <a href="#">Earn Points</a>
+            <a href="#">Use Points</a>
+            <a href="#">My Account</a>
+            <a href="#">Login</a>
+        </div>
     </nav>
-    <main>
-        <section>
+    <main class="container">
+        <section class="card">
             <h2>Welcome Back, Alex!</h2>
             <p>Your journey to amazing rewards starts here. Explore how you can earn and use points with FlyDreamAir and our global partners.</p>
         </section>
-        <section>
+        <section class="card">
             <h3>Your SkyRewards Snapshot</h3>
             <p><strong>Points Balance:</strong> 12,500</p>
             <p><strong>Status Tier:</strong> Silver</p>
             <p>You're only <strong>7,500 points</strong> away from Gold status!</p>
         </section>
-        <section>
+        <section class="card">
             <h3>Explore Your Benefits</h3>
             <ul>
                 <li><strong>Flight Upgrades:</strong> Experience the luxury of our premium cabins.</li>
@@ -37,9 +41,21 @@
                 <li><strong>Partner Offers:</strong> Earn and spend with our partners.</li>
             </ul>
         </section>
+        
+        <!-- NEW SECTION -->
+        <section class="card">
+             <h3>Inspiration for Your Next Trip</h3>
+             <div class="image-container">
+                <img src="../image_assets/FDasset1_family_dubai_tourist.png" alt="Family on a beach in Dubai.">
+                <img src="../image_assets/FDasset2_business_class.png" alt="Business class cabin.">
+             </div>
+        </section>
+
     </main>
     <footer>
-        <p>&copy; 2025 FlyDreamAir. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 FlyDreamAir. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

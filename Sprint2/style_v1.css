@@ -1,4 +1,4 @@
-/* Sprint 2, Version 1: Basic External Styling */
+/* Sprint 2, Version 2: Layout and Cards */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,39 +7,81 @@ body {
     color: #333;
 }
 
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 header {
     background-color: #003366;
     color: white;
-    padding: 20px 10px;
+    padding: 20px 0;
     text-align: center;
 }
 
 nav {
     background-color: #005a9e;
-    padding: 15px 10px;
+    padding: 15px 0;
     text-align: center;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px;
     font-weight: bold;
 }
 
 main {
-    padding: 20px 10px;
+    padding-top: 20px;
+}
+
+/* NEW: Card styling for all sections */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 h2, h3 {
     color: #003366;
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/* NEW: Image gallery styling */
+.image-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    width: calc(50% - 10px); /* Responsive calculation */
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 10px;
+    padding: 20px 0;
     margin-top: 30px;
 }
 
