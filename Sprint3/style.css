@@ -1,0 +1,101 @@
+/* Sprint 3 Main Stylesheet - Final Version */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #3a3a3a;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: white;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky; top: 0; z-index: 100;
+}
+
+nav a {
+    color: #005a9e;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+nav a:hover { color: #003366; }
+
+/* NEW: Active state for navigation link */
+nav a.active {
+    color: #003366;
+    border-bottom: 3px solid #003366;
+}
+
+.login-button {
+    background-color: #005a9e;
+    color: white !important;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border-bottom: none !important; /* Override active state border */
+    transition: background-color 0.3s ease;
+}
+.login-button:hover { background-color: #003366; }
+
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../image_assets/FDasset3_main_page_view_business.png');
+    background-size: cover; background-position: center;
+    color: white; text-align: center; padding: 80px 20px;
+}
+.hero h2 { font-size: 2.8em; margin-bottom: 10px; color: white; }
+.hero p { font-size: 1.2em; max-width: 600px; margin: 0 auto; }
+
+main { padding: 40px 0; }
+
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+.points-balance { font-size: 2.5em; font-weight: 700; color: #005a9e; margin: 10px 0; }
+
+ul { list-style: none; padding: 0; }
+ul li { background-color: #f8f9fa; padding: 12px; margin-bottom: 8px; border-radius: 8px; border-left: 4px solid #005a9e; }
+
+h2, h3 { color: #003366; margin-top: 0; }
+
+.image-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+.gallery-item { text-align: center; }
+.gallery-item img { width: 100%; height: auto; border-radius: 12px; margin-bottom: 10px; }
+.gallery-item p { font-weight: 600; color: #333; }
+
+footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
