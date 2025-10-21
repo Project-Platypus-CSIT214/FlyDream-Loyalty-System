@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Points - FlyDreamAir</title>
+</head>
+<body>
+    <header><h1>FlyDreamAir SkyRewards</h1></header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="earn-points_v3.html">Earn Points</a>
+        <a href="use-points_v3.html">Use Points</a>
+        <a href="#">My Account</a>
+        <a href="#">Login</a>
+    </nav>
+    <main>
+        <h2>Redeem Your Points</h2>
+        <p>See the value of your points for your next adventure.</p>
+
+        <label for="points-to-use">Points to Redeem:</label>
+        <input type="number" id="points-to-use" placeholder="e.g., 20000">
+        <br><br>
+
+        <label for="destination">Select Your Destination Region:</label>
+        <select id="destination" name="destination">
+            <option value="Thailand">Thailand</option>
+            <option value="Bali">Bali, Indonesia</option>
+            <option value="Australia">Australia</option>
+            <option value="Europe">Europe</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="India">India</option>
+            <option value="Russia">Russia</option>
+        </select>
+        <br><br>
+
+        <button id="convert-btn">Convert to Discount</button>
+        
+        <h3>Your discount is worth:</h3>
+        <div id="conversion-result"><p>--</p></div>
+
+        <hr>
+
+        <h3>Ready to Book?</h3>
+        <a id="hotel-link" href="#">Book Hotels</a>
+        <a id="flight-link" href="#">Find Flights</a>
+    </main>
+    <footer><p>&copy; 2025 FlyDreamAir. All rights reserved.</p></footer>
+</body>
+</html>
+
