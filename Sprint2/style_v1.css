@@ -50,7 +50,7 @@ nav a:hover { color: #003366; }
 
 .hero {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../image_assets/FDasset3_main_page_view_business.png');
-    background-size: cover; background-position: center;
+    background-size: cover; background-position: 50% 20%;
     color: white; text-align: center; padding: 80px 20px;
 }
 .hero h2 { font-size: 2.8em; margin-bottom: 10px; color: white; }
