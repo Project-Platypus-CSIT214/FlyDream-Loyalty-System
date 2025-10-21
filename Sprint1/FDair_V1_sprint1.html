@@ -4,41 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlyDreamAir Loyalty Program - Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #005a9e;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px 0;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2, h3 {
+            color: #003366;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background-color: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; max-width: 900px; margin: auto; padding: 20px;">
-    <header style="text-align: center; border-bottom: 2px solid #eee; padding-bottom: 10px;">
-        <h1>FlyDreamAir SkyRewards</h1>
+<body>
+    <header>
+        <div class="container">
+            <h1>FlyDreamAir SkyRewards</h1>
+        </div>
     </header>
-    <nav style="text-align: center; padding: 10px 0;">
-        <a href="#">Home</a> |
-        <a href="#">Earn Points</a> |
-        <a href="#">Use Points</a> |
-        <a href="#">My Account</a> |
-        <a href="#">Login</a>
+    <nav>
+        <div class="container">
+            <a href="#">Home</a>
+            <a href="#">Earn Points</a>
+            <a href="#">Use Points</a>
+            <a href="#">My Account</a>
+            <a href="#">Login</a>
+        </div>
     </nav>
-    <main>
-        <section id="welcome" style="margin-bottom: 20px;">
+    <main class="container">
+        <section>
             <h2>Welcome Back, Alex!</h2>
             <p>Your journey to amazing rewards starts here. Explore how you can earn and use points with FlyDreamAir and our global partners.</p>
         </section>
-        <section id="points-summary" style="margin-bottom: 20px;">
+        <section>
             <h3>Your SkyRewards Snapshot</h3>
             <p><strong>Points Balance:</strong> 12,500</p>
             <p><strong>Status Tier:</strong> Silver</p>
             <p>You're only <strong>7,500 points</strong> away from Gold status!</p>
         </section>
-        <section id="get-started">
+        <section>
             <h3>Explore Your Benefits</h3>
             <ul>
                 <li><strong>Flight Upgrades:</strong> Experience the luxury of our premium cabins.</li>
-                <li><strong>Reward Flights:</strong> Use your points to book flights to exciting destinations.</li>
+                <li><strong>Reward Flights:</strong> Use your points to book flights.</li>
                 <li><strong>Lounge Access:</strong> Relax in exclusive lounges before you fly.</li>
-                <li><strong>Partner Offers:</strong> Earn and spend points with our hotel and car rental partners.</li>
+                <li><strong>Partner Offers:</strong> Earn and spend with our partners.</li>
             </ul>
         </section>
     </main>
-    <footer style="text-align: center; border-top: 2px solid #eee; padding-top: 10px; margin-top: 30px;">
-        <p>&copy; 2025 FlyDreamAir. All rights reserved.</p>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 FlyDreamAir. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
