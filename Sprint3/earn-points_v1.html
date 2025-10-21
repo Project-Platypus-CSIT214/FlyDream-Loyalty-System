@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn Points - FlyDreamAir</title>
+</head>
+<body>
+    <header><h1>FlyDreamAir SkyRewards</h1></header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="earn-points_v3.html">Earn Points</a>
+        <a href="use-points_v3.html">Use Points</a>
+        <a href="#">My Account</a>
+        <a href="#">Login</a>
+    </nav>
+    <main>
+        <h2>Points Calculator</h2>
+        <p>Estimate the points you can earn from flights, hotels, and more.</p>
+        
+        <form id="earn-calculator-form">
+            <label for="activity">Activity Type:</label>
+            <select id="activity" name="activity">
+                <option value="flight">Flight</option>
+                <option value="hotel">Hotel Stay</option>
+                <option value="car">Car Rental</option>
+                <option value="card">Credit Card Spend</option>
+            </select>
+            <br><br>
+
+            <label for="amount">Amount Spent ($USD):</label>
+            <input type="number" id="amount" name="amount" placeholder="e.g., 1500">
+            <br><br>
+
+            <label for="tier">Your Status Tier:</label>
+            <select id="tier" name="tier">
+                <option value="blue">Blue</option>
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+            </select>
+            <br><br>
+
+            <button type="submit">Calculate Points</button>
+        </form>
+
+        <h3>You could earn:</h3>
+        <div id="points-result">
+            <p>--</p>
+        </div>
+    </main>
+    <footer><p>&copy; 2025 FlyDreamAir. All rights reserved.</p></footer>
+</body>
+</html>
+
